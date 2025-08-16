@@ -26,12 +26,12 @@ export const Home: React.FC = () => {
       </div>
 
       <div className="text-center mt-5 text-3xl font-semibold hover:text-blue-600 hover:underline">
-      <Link to ="/login">Go to Login Page</Link>
+        <Link to="/login">Go to Login Page</Link>
       </div>
       <hr />
       <nav>
         <Link to="/lazy/about"> Go to lazi about</Link>
-        <Link to="/lazy/contact" > Go to contact lazy</Link>
+        <Link to="/lazy/contact"> Go to contact lazy</Link>
       </nav>
     </div>
   );

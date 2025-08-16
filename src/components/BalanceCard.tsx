@@ -11,12 +11,12 @@ export const BalanceCard: React.FC<BalanceCardProps> = ({
   account_name,
   addMoney,
 }) => {
-    const handleAddMoney = () => {
-        const money = prompt("Enter amount to add","100");
-        if(money){
-            addMoney(Number(money));
-        }
+  const handleAddMoney = () => {
+    const money = prompt("Enter amount to add", "100");
+    if (money) {
+      addMoney(Number(money));
     }
+  };
   return (
     <>
       <div>
@@ -26,7 +26,9 @@ export const BalanceCard: React.FC<BalanceCardProps> = ({
             id="statement">
             <h1>{""}</h1>
             <h1>Balance Statement</h1>
-            <button className="cursor-pointer" onClick={() => handleAddMoney()}>Add Money+</button>
+            <button className="cursor-pointer" onClick={() => handleAddMoney()}>
+              Add Money+
+            </button>
           </div>
         </div>
         <div className="flex-row mt-5">
