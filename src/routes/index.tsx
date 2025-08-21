@@ -16,6 +16,9 @@ import { HookCounter } from "../components/HookCounter";
 import { ParentUseCallback } from "../components/useCallback/ParentUseCallback";
 import { UseMemoExample } from "../components/useMemo/UseMemoExmple";
 import { Timer } from "../components/Timer";
+import { ReducerCounter2 } from "../components/useReducer/useReducer2";
+import { TimerNew } from "../components/Timer2";
+import { CallbakParent } from "../components/useCallback/CallbackParent01";
 const LazyAbout = lazy(() => import("../components/lazy loading/lazy routing/AboutLazy"));
 const LazyContact = lazy(() => import("../components/lazy loading/lazy routing/ContactLazy"));
 
@@ -51,6 +54,10 @@ export const Index: React.FC = () => {
 
         <Route path="/timer" element={<Timer/>} />
 
+        <Route path="/reducer2" element={<ReducerCounter2/>} />
+        <Route path="/timer2" element={<TimerNew/>} />
+
+        <Route path="/callback2" element={<CallbakParent/>} />
         {/* route for fallback url */}
         <Route path="*" element={<Page404 />} />
       </Routes>
